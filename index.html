@@ -18,11 +18,12 @@
 			}
 		</script>
   <script type="module">
-   import { THREE } from "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js";
-    import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/controls/OrbitControls.js';
-    import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/loaders/GLTFLoader.js';
-    import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/loaders/OBJLoader.js';
+   import * as THREE from 'three';
 
+			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xeeeeee);
 
